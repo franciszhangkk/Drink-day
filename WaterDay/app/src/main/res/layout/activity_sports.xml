@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/sport_back">
+    <!--android:background="@drawable/run2"-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/time"
+        android:layout_marginTop="30dp">
+        <Chronometer
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format="%s"
+            android:layout_centerHorizontal="true"
+            android:textSize="40sp"
+            android:id="@+id/timer"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:id="@+id/relativeLayout"
+        android:layout_below="@+id/time"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Number of steps taken"
+            android:id="@+id/textView9"
+            android:textSize="20sp"
+            android:layout_marginStart="32dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="---"
+            android:id="@+id/numberSteps_label"
+            android:layout_alignBottom="@+id/textView9"
+            android:layout_toEndOf="@+id/textView9"
+            android:layout_marginStart="24dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutKcal"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/time"
+        android:layout_marginTop="0dp">
+
+        <TextView
+            android:id="@+id/textViewKcal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="15dp"
+            android:text="Kcal you have cost"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/numberKcal_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="59dp"
+            android:text="---"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_alignTop="@+id/textViewKcal"
+            android:layout_toEndOf="@+id/textViewKcal" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/relativeLayoutKcal"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/startbutton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape3"
+            android:onClick="startCount"
+            android:text="Start"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/menu3"
+            android:textColorHighlight="#ffffff" />
+
+        <Button
+            android:id="@+id/stopbutton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/startbutton"
+            android:background="@drawable/shape4"
+            android:onClick="stopCount"
+            android:text="End"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

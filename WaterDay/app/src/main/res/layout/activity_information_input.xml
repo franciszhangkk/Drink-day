@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sport_back">
+
+    <TextView
+        android:id="@+id/hello_user"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginTop="25dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:textColor="@color/textcolor"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/linearLayout" />
+
+    <LinearLayout
+        android:layout_width="366dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="43dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/hello_user"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="10dp">
+
+        <TextView
+            android:id="@+id/TextView_gender"
+            android:layout_width="97dp"
+            android:layout_height="34dp"
+            android:textColor="@color/textcolor"
+            android:text="Gender"
+            android:textSize="25sp"/>
+
+        <Spinner
+            android:id="@+id/gender_spin"
+            android:layout_width="match_parent"
+            android:minHeight="34dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="366dp"
+        android:layout_height="39dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout"
+        android:id="@+id/linearLayout2"
+        android:layout_marginEnd="10dp">
+
+        <TextView
+            android:id="@+id/TextView_age"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            android:textColor="@color/textcolor"
+            android:textSize="25sp"
+            android:layout_weight="0.21" />
+
+        <EditText
+            android:id="@+id/editText_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.49"
+            android:ems="10"
+            android:hint="Input your age"
+            android:inputType="number" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="366dp"
+    android:layout_height="39dp"
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal"
+    android:layout_below="@+id/linearLayout2"
+    android:layout_alignStart="@+id/linearLayout2"
+    android:id="@+id/linearLayout3"
+    android:layout_marginEnd="10dp">
+
+        <TextView
+        android:id="@+id/TextView_height"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:text="Height"
+        android:textColor="@color/textcolor"
+        android:textSize="25sp"
+        android:layout_weight="0.21" />
+
+        <EditText
+         android:id="@+id/editText_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.49"
+        android:ems="10"
+        android:hint="Input your height(cm)"
+        android:inputType="number" />
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="366dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignStart="@+id/linearLayout3"
+        android:id="@+id/linearLayout4"
+        android:layout_marginEnd="10dp">
+        <TextView
+            android:id="@+id/TextView_weight"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:text="Weight"
+            android:textColor="@color/textcolor"
+            android:textSize="25sp"
+            android:layout_weight="0.21" />
+
+        <EditText
+            android:id="@+id/editText_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.49"
+            android:ems="10"
+            android:hint="Input your weight(kg)"
+            android:inputType="number" />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:text="Submit"
+        android:id="@+id/stopbutton"
+        android:textColor="#ffffff"
+        android:background="@drawable/shape5"
+        android:onClick="Submit"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="53dp">
+
+    </Button>
+
+    <LinearLayout
+        android:layout_width="366dp"
+        android:layout_height="39dp"
+        android:layout_alignStart="@+id/linearLayout4"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout5"
+        android:layout_marginEnd="10dp">
+
+
+        <ImageView
+            android:id="@+id/imageHomeCup"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/homecup" />
+        <EditText
+            android:id="@+id/editText_homesize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.49"
+            android:ems="10"
+            android:hint="Size of your home cup(ml)"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="366dp"
+        android:layout_height="39dp"
+        android:layout_alignStart="@+id/linearLayout5"
+        android:layout_below="@+id/linearLayout5"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_marginEnd="10dp">
+
+
+        <ImageView
+            android:id="@+id/imageOutCup"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/outcup"/>
+        <EditText
+            android:id="@+id/editText_outsize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.49"
+            android:ems="10"
+            android:hint="Size of your outing cup(ml)"
+            android:inputType="number" />
+    </LinearLayout>
+
+
+</RelativeLayout>

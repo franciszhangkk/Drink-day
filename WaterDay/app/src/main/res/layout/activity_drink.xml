@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/frameLayout">
+
+        <comp5216.waterday.CircleProgressBar
+            android:layout_gravity="center"
+            android:id="@+id/circleProgressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="229dp"
+            cp:radius="80dp"
+            cp:strokeWidth="10dp"
+            cp:ringColor="#84C1FF"
+            cp:textColor="#0000ff" />
+
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/imageView2"
+            android:layout_width="113dp"
+            android:layout_height="119dp"
+            cp:srcCompat="@drawable/water_cup" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/textView_need"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Still need to drink:"
+            android:textColor="#3396ca"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#3396ca"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back"
+        android:id="@+id/relativeLayout"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentStart="true">
+
+        <com.nightonke.boommenu.BoomMenuButton
+            android:id="@+id/bmb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="53dp"
+            app:bmb_dotRadius="0dp">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/drop"
+                android:layout_gravity="center" />
+
+        </com.nightonke.boommenu.BoomMenuButton>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#66B3FF</color>
+    <color name="colorPrimaryDark">#2894FF</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="Indigo_colorPrimaryDark">#303f9f</color>
+    <color name="Indigo_colorPrimary">#3f51b5</color>
+    <color name="Indigo_nav_color">#4675FF</color>
+    <color name="startbtn_color">#66B3FF</color>
+    <color name="stopbtn_color">#ff97a1</color>
+    <color name="pausebtn_color">#f29f31</color>
+    <color name="cardview_dark_background">#fcfbfb</color>
+    <color name="need_to_drink">#89ccef</color>
+    <color name="menu1">#323ae1</color>
+    <color name="menu2">#287adf</color>
+    <color name="menu3">#4080e7</color>
+    <color name="menu4">#529ee4</color>
+    <color name="menu5">#48c0ec</color>
+    <color name="menu6">#48d6ec</color>
+    <color name="stopcolor">#FFC293</color>
+    <color name="textcolor">#287adf</color>
+    <color name="outback">#4b5a71</color>
+
+</resources>
